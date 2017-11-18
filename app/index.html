@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Trenton Nale">
+    <meta name="discription" content="Note-taking example app in Electron">
+
+    <link rel="stylesheet" href="../static/css/index.css">
+
+	  <script type="text/javascript">window.$=window.jQuery=require("../static/js/jquery-3.2.1.js"); </script>
+    <script src="../static/js/knockout-3.4.2.js" type="text/javascript" ></script>
+    <script src="../static/js/index.js" type="text/javascript" ></script>
+
+    <title>Noter</title>
+  </head>
+  <body>
+
+    <div id="screen_holder" data-bind="template: {name: operation_screen}">
+      <!-- This div is where each "screen" slots in when selected to display to the user.
+      -->
+    </div>
+
+  </body>
+
+  <!-- ================================ Screen Templates========================================
+    Each screen should be built inside its own script tag so that the resources are loaded but not displayed until needed -->
+
+  <!-- Login Screen -->
+  <script type="text/html" id="login_screen">
+    
+  </script>
+  <!-- End of Login Screen -->
+
+  <script>
+    // You can also require other files to run in this process
+    require('../static/js/renderer.js')
+  </script>
+</html>

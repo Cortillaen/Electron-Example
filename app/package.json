@@ -1,0 +1,26 @@
+{
+  "name": "Noter",
+  "version": "0.1.1",
+  "description": "Electron-based Note-taking example app",
+  "main": "static/js/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/Cortillaen/Electron-Example/",
+  "keywords": [
+    "Electron",
+    "GUI",
+    "Notes",
+    "Example"
+  ],
+  "bugs": {
+    "url": "https://github.com/dmlause/CoMPES-GUI/issues",
+    "email": "senkairyu@gmail.com"
+  },
+  "contributors": [
+    "Trenton Nale <trentonnale@gmail.com> (http://github.com/Cortillaen)"
+  ],
+  "devDependencies": {
+    "electron": "~1.6.2"
+  }
+}
