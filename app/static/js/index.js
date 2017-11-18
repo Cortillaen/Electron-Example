@@ -8,7 +8,29 @@ function Viewmodel() {
 	Output: N/A
 	Notes: N/A
 	*/
+	var self = this;
 
+	function Note() {
+		this.title = ko.observable("");
+		this.content = ko.observable("");
+	}
+
+	self.notes = ko.observableArray([]);
+
+	self.selectedNote = ko.observable(null);
+
+	self.addNote = function() {
+		self.notes.push();
+		self.selectedNote(self.notes.slice(-1)[0]);
+	}
+
+	self.deleteNote = function() {
+		if(self.notes.length() > 1)
+			self.selectedNote(self.notes.slice(0,1)[0]);
+		else
+			self.selectedNote(null);
+		self.notes.remove(self.selectedNote());
+	}
 };
 
 //##################################### Document-Level js ###################################

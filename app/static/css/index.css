@@ -1,0 +1,21 @@
+html {
+	width: 100%;
+}
+
+body {
+	width: 100%;
+}
+
+h1 {
+	clear: both;
+}
+
+.list {
+	float: left;
+	min-height: 500px;
+}
+
+.details {
+	float: left;
+	min-height: 500px;
+}
