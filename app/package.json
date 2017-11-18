@@ -20,6 +20,7 @@
   "contributors": [
     "Trenton Nale <trentonnale@gmail.com> (http://github.com/Cortillaen)"
   ],
+  "license": "MIT",
   "devDependencies": {
     "electron": "~1.6.2"
   }

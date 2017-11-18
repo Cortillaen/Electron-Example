@@ -8,8 +8,6 @@ function Viewmodel() {
 	Output: N/A
 	Notes: N/A
 	*/
-	//================================== Data Structures ====================================
-	
 
 };
 
