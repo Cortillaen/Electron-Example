@@ -22,9 +22,6 @@ function createWindow () {
   mainWindow.on('closed', function () {
     mainWindow = null
   })
-
-  mainWindow.maximize();
-  mainWindow.setResizable(false);
 }
 
 app.on('ready', createWindow)
