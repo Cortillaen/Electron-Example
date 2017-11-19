@@ -1,21 +1,55 @@
 html {
-	width: 100%;
+	text-align: center;
+	width: 99%;
 }
 
 body {
 	width: 100%;
 }
 
+button {
+	font-size: 120%;
+}
+
+div {
+	border: ;
+}
+
 h1 {
 	clear: both;
 }
 
-.list {
-	float: left;
-	min-height: 500px;
+input {
+	font-size: 150%;
+	margin: 0px 0px 5px 0px;
 }
 
-.details {
+p {
+	margin: 0px;
+	padding: 4px;
+}
+
+textarea {
+	width: 99%;
+	height: 350px;
+}
+
+#list {
 	float: left;
-	min-height: 500px;
+	min-height: 400px;
+	width: 29%;
+	border-width: thin;
+	border-style: solid;
+}
+
+#details {
+	float: right;
+	min-height: 400px;
+	width: 69%;
+	padding: 5px;
+}
+
+#buttonbar {
+	clear: both;
+	width: 100%;
 }

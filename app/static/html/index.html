@@ -17,8 +17,19 @@
 
     <h1>Noter Note App</h1>
     <div id="list">
+      <!-- ko foreach: { data: notes } -->
+        <p data-bind="text: title, click: function() {$root.selectedNote($data);}, style: {backgroundColor : isActive() ? 'green' : 'transparent'}"></p>
+      <!-- /ko -->
     </div>
     <div id="details">
+      <!-- ko if: (selectedNote() != null) -->
+        <input data-bind="value: selectedNote().title"/>
+        <textarea data-bind="value: selectedNote().content"></textarea>
+      <!-- /ko -->
+    </div>
+    <div id="buttonbar">
+      <button data-bind="click: addNote">New Note</button>
+      <button data-bind="click: deleteNote">Remove Note</button>
     </div>
 
   </body>
