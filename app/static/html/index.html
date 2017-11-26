@@ -18,16 +18,21 @@
     <h1>Noter Note App</h1>
     <div id="list">
       <!-- ko foreach: { data: notes } -->
+        <!-- The above is evaluated by Knockout.js and executes everything inside for each element in the notes array of
+          our Viewmodel class.  This is why the array has to be implemented as a Knockout.js ObservableArray.
+          For each note, we add a <p> tag.  This tag uses the Knockout.js data-bind options 'text' to set the tag's text to the note's title, 'click' to attach a function to execute when this element is clicked, and 'style' to have a conditional formatting that highlights this element when this note is selected. -->
         <p data-bind="text: title, click: function() {$root.selectedNote($data);}, style: {backgroundColor : isActive() ? 'green' : 'transparent'}"></p>
       <!-- /ko -->
     </div>
     <div id="details">
       <!-- ko if: (selectedNote() != null) -->
+        <!-- This is another use of Knockout.js's control options to make sure we only display and bind these tags if there is data to bind them to. -->
         <input data-bind="value: selectedNote().title"/>
         <textarea data-bind="value: selectedNote().content"></textarea>
       <!-- /ko -->
     </div>
     <div id="buttonbar">
+      <!-- Knockout.js data bindings are again used here to attach click event handlers. -->
       <button data-bind="click: addNote">New Note</button>
       <button data-bind="click: deleteNote">Remove Note</button>
     </div>
@@ -35,7 +40,7 @@
   </body>
 
   <script>
-    // You can also require other files to run in this process
+    //Any additional files you want to run as part of your app can be included here.  The renderer is used to make any changes we need to how Electron displays pages, though we are simply using the defaults here.
     require('../js/renderer.js')
   </script>
 </html>
