@@ -5,7 +5,7 @@
   "main": "static/js/main.js",
   "scripts": {
     "start": "electron .",
-    "package": "electron-packager ./ Noter --all --out ../../ --version 0.30.2 --overwrite"
+    "package": "electron-packager ./ Noter --all --out ../../ --overwrite"
   },
   "repository": "https://github.com/Cortillaen/Electron-Example/",
   "keywords": [
