@@ -4,7 +4,8 @@
   "description": "Electron-based Note-taking example app",
   "main": "static/js/main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "package": "electron-packager ./ Noter --all --out ../../ --version 0.30.2 --overwrite"
   },
   "repository": "https://github.com/Cortillaen/Electron-Example/",
   "keywords": [
