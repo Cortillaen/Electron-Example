@@ -47,7 +47,7 @@ function Viewmodel() {
 	//this is a standard convention for having access to the Viewmodel object inside other objects
 	var self = this;
 	//we create the path to where user data is stored so we can load and save notes
-	self.path = path.join(electron.remote.app.getPath('userData'), 'noter_data.json');
+	self.path = path.join(electron.remote.app.getPath('userData'), 'notable_data.json');
 	//this is the array storing our notes in the format Knockout.js requires to watch the array
 	self.notes = ko.observableArray([]);
 	/*Knockout.js does not allow changing data bindings once set, so we need a way to change what
@@ -111,7 +111,7 @@ function Viewmodel() {
 		try {
 			info = JSON.parse(fs.readFileSync(self.path));
 		} catch(error) {
-			alert("No note data found.\n\nIf this is not your first time running Noter, \
+			alert("No note data found.\n\nIf this is not your first time running Notable, \
 				\nyour data may have been lost or corrupted.")
 		}
 		for(var note in info) {
