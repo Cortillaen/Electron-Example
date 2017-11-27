@@ -1,5 +1,5 @@
 {
-  "name": "Noter",
+  "name": "Notable",
   "version": "0.1.1",
   "description": "Electron-based Note-taking example app",
   "main": "static/js/main.js",
